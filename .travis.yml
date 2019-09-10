@@ -17,3 +17,11 @@ script:
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
+
+notifications:
+    webhooks: https://travis-for-jira-prod.toolsplus.app/travis/notifications?token=953bbed3-b47a-334a-bc12-c3d4794bb988
+    on_success: always
+    on_failure: always
+    on_start: always
+    on_cancel: always
+    on_error: always
